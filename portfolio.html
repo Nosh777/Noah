@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Ton Nom</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, #4e54c8, #8f94fb);
+            color: #fff;
+            padding: 40px 0 20px 0;
+            text-align: center;
+        }
+        header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 32px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+        }
+        #skills li {
+            background: #e0e7ff;
+            display: inline-block;
+            margin: 6px 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #bfc9d9;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+        button {
+            background: #4e54c8;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #222;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #4e54c8;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ton Nom</h1>
+        <p>Développeur Web | Créatif | Passionné de Tech</p>
+        <nav>
+            <a href="#about">À propos</a> |
+            <a href="#projects">Projets</a> |
+            <a href="#skills">Compétences</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>
+            Salut ! Je suis un développeur passionné par la création de sites web modernes et d'applications innovantes.<br>
+            J'aime apprendre de nouvelles technologies et relever des défis techniques.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project">
+            <h3>Portfolio Web</h3>
+            <p>Un site personnel pour présenter mes réalisations.</p>
+        </div>
+        <div class="project">
+            <h3>Application ToDo</h3>
+            <p>Gestionnaire de tâches simple et efficace.</p>
+        </div>
+        <div class="project">
+            <h3>Jeu JavaScript</h3>
+            <p>Petit jeu interactif codé en JS pur.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>HTML / CSS / JavaScript</li>
+            <li>React / Node.js</li>
+            <li>Python / SQL</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ton Nom. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
